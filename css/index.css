@@ -1,0 +1,343 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?euwr0s');
+    src: url('../fonts/icomoon.eot?euwr0s#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?euwr0s') format('truetype'),
+    url('../fonts/icomoon.woff?euwr0s') format('woff'),
+    url('../fonts/icomoon.svg?euwr0s#icomoon') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+.grid{
+    height: 470px;
+    margin-top: 1px;
+}
+.grid .col1{
+    width: 190px;
+    height: 100%;
+    color: #6e6568;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+.grid .col2{
+    width: 790px;
+    height: 100%;
+
+    margin-left: 10px;
+
+
+}
+.grid .col3{
+    width: 190px;
+    height: 100%;
+    background-color: #222222;
+
+
+}
+
+.grid .col1 ul{
+    padding: 12px ;
+
+
+
+}
+.grid .col1 ul li{
+    padding-left: 12px ;
+    height: 28px;
+    line-height: 28px;
+
+
+}
+.grid .col1 ul li:hover{
+   background-color:  #cccccc;
+
+
+}
+.grid .col1 ul li a:hover{
+    color: #c81623;
+}
+.grid .col1 a{
+    font-size: 13px;
+    color: #888888;
+    margin:0px 3px;
+
+}
+img{
+   /*display: block;*/
+    vertical-align: top;
+}
+
+.col2_botom .no1{
+    float: left;
+    margin-top: 10px;
+}
+.col2_botom .no2{
+    float: right;
+    margin-top: 10px;
+}
+
+.col2_top{
+    position: relative;
+}
+.arr_rt, .arr_lt{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(255,255,255,0.3);
+    line-height: 60px;
+    font-style: normal;
+    color: #ccc;
+    position: absolute;
+    top:50%;
+    width: 30px;
+    height: 60px;
+
+    transform: translateY(-50%);
+}
+.arr_rt{
+    right: 0px;
+}
+.arr_lt{
+
+}
+.circle{
+    width: 165px;
+    height: 20px;
+    /*background-color: yellow;*/
+    background-color: rgba(255,255,255,.3);
+    position: absolute;
+    bottom: 20px;
+
+    left: 50%;
+    transform:translateX(-50%);
+/*圆角处理*/
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.circle li{
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    float:left;
+    margin: 4px 5px 0px;
+    cursor: pointer;
+}
+.circle .current{
+    background-color: #cccccc;
+}
+
+
+/*中间右侧模块*/
+/*登录模块*/
+.login{
+    height: 85px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    padding: 15px;
+}
+.login-t{
+    width:95px;
+    height: 60px;
+    line-height: 20px;
+    font-size:15px;
+    /*强制一行*/
+    white-space: nowrap;
+    /*超过显示的状况*/
+    overflow: hidden;
+    /*超出部分显示...*/
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    color: #666666;
+    /*用padding把文字挤开*/
+    padding-left: 60px;
+    position: relative;
+}
+.login-t a {
+    color: #666;
+}
+.login-t a:hover{
+    color: #f10512;
+}
+.user-info {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    /*需要裁切*/
+    overflow: hidden;
+    /*设置background-color来产生后部圆圈效果*/
+
+}
+.user-info img {
+    width: 100%;
+    /*这里注意img全局的话会覆盖之前样式*/
+/*img {*/
+    /*width: 100%;*/
+}
+.login-b a {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border: 2px solid #f10215;
+    margin-left:3px;
+    line-height: normal;
+    text-align: center;
+    color: #f10215
+}
+.login-b a:hover {
+    background-color: #f10215;
+    color: white;
+}
+
+.news {
+    height: 145px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #ffffff;
+    padding: 7px 13px 0;
+    box-sizing: border-box;
+}
+.news-t a {
+    float: left;
+}
+.news-t{
+    height: 19px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 17px;
+}
+.sell {
+    width: 38px;
+    height: 17px;
+    border-right: 1px solid #cccccc;
+}
+.tell {
+    margin-left:15px;
+}
+/*存在权重问题，需要用类名两个*/
+.news-t .more {
+    float: right;
+}
+.news-b {
+    padding-top: 15px;
+}
+.news-b li {
+    height: 23px;
+    line-height: 20px;
+
+}
+
+
+.expand{
+    height:209px;
+    background-color: #ffffff;
+    /*结合ul和li来处理最后一个和浮动放不开的问题*/
+    overflow: hidden;
+}
+.expand ul {
+    width: 195px;
+}
+.expand li {
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    float: left;
+}
+
+.expand li a {
+    display: block;
+    /*padding占盒子大小，有超链接；margin不占，无*/
+    padding-top: 15px;
+    text-align: center;
+
+}
+.expand li:first-child i {
+    /*使用图片拼接技术时最好是能控制小图的大小是width
+    和height的适应值，因只截取w和h的大小   */
+    width: 24px;
+    height: 23px;
+    background-position: 0 0;
+    /*background-size: 18px 24px;*/
+    /*transform: scale(0.5);*/
+}
+.expand li i {
+    display: block;
+    margin:0 auto;
+    margin-bottom:10px;
+    background: url(../images/img_navsprites_hover.gif) no-repeat ;
+}
+.expand li:nth-child(2) i {
+    width: 24px;
+    height: 23px;
+    background-position: -24px 0;
+
+}
+.expand li:nth-child(3) i {
+    width: 24px;
+    height: 23px;
+    background-position: -48px 0;
+
+}
+.expand li:nth-child(4) i {
+    width: 24px;
+    height: 23px;
+    background-position: -24px -23px;
+
+}
+
+.expand li:nth-child(5) i {
+    width: 24px;
+    height: 23px;
+    background-position: -48px 0;
+
+}
+.expand li:nth-child(6) i {
+    width: 24px;
+    height: 23px;
+    background-position: -48px 0;
+
+}.expand li:nth-child(7) i {
+     width: 24px;
+     height: 23px;
+     background-position: -48px 0;
+
+ }.expand li:nth-child(8) i {
+      width: 24px;
+      height: 23px;
+      background-position: -48px 0;
+
+  }
+.expand li:nth-child(9) i {
+    width: 24px;
+    height: 23px;
+    background-position: -48px 0;
+
+}.expand li:nth-child(10) i {
+     width: 24px;
+     height: 23px;
+     background-position: -48px 0;
+
+ }.expand li:nth-child(11) i {
+      width: 24px;
+      height: 23px;
+      background-position: -48px 0;
+
+  }.expand li:nth-child(12) i {
+       width: 24px;
+       height: 23px;
+       background-position: -48px 0;
+
+   }
+
+
+
+
+
+
+
+
